@@ -2,8 +2,8 @@
 Documentation  Login
 Library  SeleniumLibrary
 
-Resource  ../Resources/commonfunctionality.robot
-Resource  ../Resources/PageObjects/Login.robot
+Resource        ../Resources/commonfunctionality.robot
+Resource        ../Resources/PageObjects/Login.robot
 
 Suite Setup     Run Keywords  commonfunctionality.Open Page  
 ...             Login.Verify Login Page Loaded

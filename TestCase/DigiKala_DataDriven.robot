@@ -15,13 +15,13 @@ Test Template   DataDriven.Category
 
 
 *** Variables ***
-${Domestic_Magazines}       xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/div[1]/div[2]/a[1]
+${DomesticMagazines}       xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/div[1]/div[2]/a[1]
 #xpath://a[@href="/search/category-domestic-magazines/"]
-${Foreign_Magazines}        xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/div[1]/div[2]/a[2]
+${ForeignMagazines}        xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/div[1]/div[2]/a[2]
 #xpath://a[@href="/search/category-magazine/"]
 
 
 *** Test Cases ***
-This is DigiKala_DataDriven for Domestic_Magazines  ${Domestic_Magazines}
-This is DigiKala_DataDriven for Foreign_Magazines   ${Foreign_Magazines}
+This is DigiKala_DataDriven for Domestic_Magazines  ${DomesticMagazines}
+This is DigiKala_DataDriven for Foreign_Magazines   ${ForeignMagazines}
 

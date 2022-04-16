@@ -5,7 +5,7 @@ Library     SeleniumLibrary
 ${url}  https://www.digikala.com/ 
 ${browser}  Chrome 
 ${Speed}  0s
-${Timeout}  120s
+${Timeout}  60s
 
 *** Keywords ***
 Open Page
@@ -23,7 +23,7 @@ Click
         Wait Until Element Is Enabled   ${arg}
         Run Keyword And Ignore Error  Scroll Element Into View  ${arg}
         Wait Until Element Is Visible   ${arg}
-        Mouse Over    ${arg}
+        Run Keyword And Ignore Error  Mouse Over    ${arg}
         Wait Until Keyword Succeeds  2 min    5 sec  Click Element   ${arg}    
 
 assertion Text

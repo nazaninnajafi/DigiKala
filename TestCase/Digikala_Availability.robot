@@ -10,22 +10,24 @@ Resource  ../Resources/PageObjects/Availability.robot
 
 Suite Setup     Run Keywords  commonfunctionality.Open Page  
 ...             Login.Verify Login Page Loaded
+# ...             Login.click on login
+# ...             Login.Enter Username and Click
+# ...             Login.Enter Password and Click
 Suite Teardown  commonfunctionality.Close Page
 
+
 *** Variables ***
-${pProduct}        xpath://div[@class='d-flex flex-wrap']//span[contains(text(),'ناموجود')]     
+${PProduct}        xpath://div[@class='d-flex flex-wrap']//span[contains(text(),'ناموجود')]     
 
 
 *** Test Cases ***
 This is Availability Test for digikala.com
-  Login.click on login
-  Login.Enter Username and Click
-  Login.Enter Password and Click
-
+  # Login.Check Username on Page
   Select Category
-  Click   ${Best_selling}
- 
-  Add Filter  برند  ${Brand}  ${Brand_name} 
+  Click  ${BestSelling} 
+  Add Filter  برند  ${Brand}  ${BrandName} 
+  Set Focus To Element  ${NextPage}
+  Wait Until Page Contains Element  ${NextPage}
   Availability.Next Page
-  Find and Select Product   ${pProduct}
+  Find and Select Product  ${PProduct}
   Know Me 
