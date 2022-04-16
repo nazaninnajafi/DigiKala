@@ -26,9 +26,7 @@ Category
     Sub Category  خرید بر اساس دسته‌بندی  ${productSubClass}
     Sub Category  مجلات  ${Magazine}
     Sub Category  مجلات داخلی  ${MagazineType}
-
     Add Filter  نوع جلد  ${CoverType}  ${CoverPaper}
-
     Find and Select Product  ${Product}
     assertion Text  ویژگی‌ها
     Page Should Contain     کاغذی
