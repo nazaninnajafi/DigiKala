@@ -10,9 +10,9 @@ Resource  ../Resources/PageObjects/Availability.robot
 
 Suite Setup     Run Keywords  commonfunctionality.Open Page  
 ...             Login.Verify Login Page Loaded
-# ...             Login.click on login
-# ...             Login.Enter Username and Click
-# ...             Login.Enter Password and Click
+...             Login.click on login
+...             Login.Enter Username and Click
+...             Login.Enter Password and Click
 Suite Teardown  commonfunctionality.Close Page
 
 
@@ -22,12 +22,9 @@ ${PProduct}        xpath://div[@class='d-flex flex-wrap']//span[contains(text(),
 
 *** Test Cases ***
 This is Availability Test for digikala.com
-  # Login.Check Username on Page
   Select Category
   Click  ${BestSelling} 
   Add Filter  برند  ${Brand}  ${BrandName} 
-  Set Focus To Element  ${NextPage}
-  Wait Until Page Contains Element  ${NextPage}
-  Availability.Next Page
+  Next Page
   Find and Select Product  ${PProduct}
   Know Me 
