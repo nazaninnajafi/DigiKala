@@ -15,7 +15,8 @@ ${SellerType}          xpath://div[contains(@class, "text-subtitle-strong d-flex
 ${SellerName}          xpath://div[contains(@class, "text-subtitle-strong") and contains(text(),'دیجی‌کالا')]
 #Sort
 ${BestSelling}         xpath://div[contains(@data-cro-id, "plp-sort-option") and contains(text(),'پرفروش‌ترین‌')]
-${Productt}            xpath://div[@class='d-flex flex-wrap']/div[3]
+${Productt}            xpath://div[@class='d-flex flex-wrap']/div[1]
+${assertion}           xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/article/div/div/h2
 #cart
 ${AddToCart}           xpath://button[@data-cro-id="pdp-add-to-cart"]
 ${cartButton}          xpath://a[@href="/checkout/cart/"]  
@@ -38,6 +39,11 @@ Select Category
 Filters
     Add Filter  برند  ${Brand}  ${BrandName}
     Add Filter  نوع فروشنده  ${SellerType}  ${SellerName}
+
+BestSelling Tab And Next Page And Select Product
+    Click   ${BestSelling}
+    Run Keyword And Ignore Error  Scroll Element Into View  ${assertion}
+    Find and Select Product   ${Productt}
 
 Cart
     commonfunctionality.Click   ${AddToCart}

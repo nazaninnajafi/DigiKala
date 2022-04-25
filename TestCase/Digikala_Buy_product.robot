@@ -16,15 +16,10 @@ Suite Teardown  commonfunctionality.Close Page
 
 Force Tags      Digikala_Buy_product
 
-*** Variables ***
-${assertion}      xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/article/div/div/h2
-
 
 *** Test Cases ***
 This is Buy_product TestCase for digikala.com
   Select Category
   Filters
-  Click   ${BestSelling}
-  Run Keyword And Ignore Error  Scroll Element Into View  ${assertion}
-  Find and Select Product   ${Productt} 
+  BestSelling Tab And Next Page And Select Product
   Cart

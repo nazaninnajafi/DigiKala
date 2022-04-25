@@ -1,6 +1,6 @@
 *** Settings ***
 Documentation  Login
-Library  SeleniumLibrary
+Library         SeleniumLibrary
 
 Resource        ../Resources/commonfunctionality.robot
 Resource        ../Resources/PageObjects/Login.robot
