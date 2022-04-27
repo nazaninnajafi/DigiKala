@@ -23,16 +23,16 @@ ${Profile}                      نازنین نجفی
 Verify Login Page Loaded
         wait until page contains   ${WebsiteName}
 
-click on login
+Click on login
         Click Element   ${ClickOnLogin}
 
 Enter Username and Click
-        assertion Text  ورود
+        Assertion Text  ورود
         Input Text      ${UsernameInput}  ${Username}
         Click Element      ${UsernamePressKeys}   
 
 Enter Password and Click
-        assertion Text  تایید 
+        Assertion Text  تایید 
         Wait Until Element Is Enabled   ${PasswordInput} 
         Input Password      ${PasswordInput}   ${Password}
         Click Element      ${PasswordPressKeys}
@@ -40,7 +40,7 @@ Enter Password and Click
 Check Username on Page
         Wait Until Element Is Visible   ${ProfileButton} 
         Click Element   ${ProfileButton}
-        assertion Text  ${Profile}
+        Assertion Text  ${Profile}
      
         
                 

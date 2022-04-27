@@ -1,17 +1,17 @@
 *** Settings ***
 Documentation  DataDriven
 
-Library  SeleniumLibrary
+Library         SeleniumLibrary
 
-Resource  ../Resources/commonfunctionality.robot
-Resource  ../Resources/PageObjects/Login.robot
-Resource  ../Resources/PageObjects/DataDriven.robot
+Resource        ../Resources/commonfunctionality.robot
+Resource        ../Resources/PageObjects/Login.robot
+Resource        ../Resources/PageObjects/DataDriven.robot
 
-Suite Setup     Run Keywords  commonfunctionality.Open Page  
-...             Login.Verify Login Page Loaded
-Suite Teardown  commonfunctionality.Close Page
+Suite Setup      Run Keywords  Open Page  
+...              Verify Login Page Loaded
+Suite Teardown   Close Page
 
-Test Template   DataDriven.Category
+Test Template    Category
 
 
 *** Variables ***

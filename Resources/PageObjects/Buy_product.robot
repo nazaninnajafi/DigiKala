@@ -42,13 +42,13 @@ Filters
 
 BestSelling Tab And Next Page And Select Product
     Click   ${BestSelling}
-    Run Keyword And Ignore Error  Scroll Element Into View  ${assertion}
+    # Run Keyword And Ignore Error  Scroll Element Into View  ${assertion}
     Find and Select Product   ${Productt}
 
 Cart
     commonfunctionality.Click   ${AddToCart}
     commonfunctionality.Click   ${cartButton}
-    assertion Text  سبد خرید
+    Assertion Text  سبد خرید
     commonfunctionality.Click   ${ContinueShopping}
-    assertion Text  انتخاب زمان ارسال
+    Assertion Text  انتخاب زمان ارسال
     

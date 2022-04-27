@@ -16,7 +16,7 @@ ${Product}              xpath://div[@class='d-flex flex-wrap']/div[1]
 *** Keywords ***
 Sub Category
     [Arguments]     ${assertion_textt}  ${sub_category}  
-    assertion Text  ${assertion_textt}
+    Assertion Text  ${assertion_textt}
     Click   ${sub_category}
 
 Category
@@ -28,5 +28,5 @@ Category
     Sub Category  مجلات داخلی  ${MagazineType}
     Add Filter  نوع جلد  ${CoverType}  ${CoverPaper}
     Find and Select Product  ${Product}
-    assertion Text  ویژگی‌ها
+    Assertion Text  ویژگی‌ها
     Page Should Contain     کاغذی

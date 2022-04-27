@@ -18,20 +18,21 @@ ${assertion}      xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/article/di
 Next Page
   Set Focus To Element  ${NextPage}
   Wait Until Page Contains Element  ${NextPage}
-  FOR    ${i}    IN RANGE    8
+  FOR    ${i}    IN RANGE    10
         Run Keyword And Ignore Error  Scroll Element Into View  ${assertion}     
   END
+  Run Keyword And Ignore Error  Scroll Element Into View  ${assertion} 
   sleep  2s
   Click   ${NextPage}
    
 Know Me 
-    assertion Text  ناموجود
+    Assertion Text  ناموجود
     Click   ${knowMe}
-    assertion Text  اگر کالا موجود شد، چطور به شما اطلاع دهیم؟
+    Assertion Text  اگر کالا موجود شد، چطور به شما اطلاع دهیم؟
     Click   ${messege}
-    assertion Text  ثبت
+    Assertion Text  ثبت
     Click   ${submit}
-    assertion Text  دیگر لازم نیست خبرم کنید
+    Assertion Text  دیگر لازم نیست خبرم کنید
 
 
     
