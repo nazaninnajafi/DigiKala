@@ -16,13 +16,13 @@ ${assertion}      xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/article/di
 
 *** Keywords ***
 Next Page
-  Set Focus To Element  ${NextPage}
-  Wait Until Page Contains Element  ${NextPage}
   FOR    ${i}    IN RANGE    10
         Run Keyword And Ignore Error  Scroll Element Into View  ${assertion}     
   END
   Run Keyword And Ignore Error  Scroll Element Into View  ${assertion} 
   sleep  2s
+  Set Focus To Element  ${NextPage}
+  Wait Until Page Contains Element  ${NextPage}
   Click   ${NextPage}
    
 Know Me 
