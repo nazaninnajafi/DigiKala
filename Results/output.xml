@@ -1,90 +1,90 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 4.1.3 (Python 3.6.5 on win32)" generated="20220427 11:52:37.529" rpa="false" schemaversion="2">
+<robot generator="Robot 4.1.3 (Python 3.6.5 on win32)" generated="20220427 16:34:42.233" rpa="false" schemaversion="2">
 <suite id="s1" name="Digikala Availability" source="C:\Users\Mi Store\Desktop\DigiKala\TestCase\Digikala_Availability.robot">
 <kw name="Open Page" library="commonfunctionality" type="SETUP">
 <doc>This Is Open Digikala</doc>
 <kw name="Set Selenium Speed" library="SeleniumLibrary">
 <arg>${Speed}</arg>
 <doc>Sets the delay that is waited after each Selenium command.</doc>
-<status status="PASS" starttime="20220427 11:52:37.818" endtime="20220427 11:52:37.818"/>
+<status status="PASS" starttime="20220427 16:34:42.519" endtime="20220427 16:34:42.519"/>
 </kw>
 <kw name="Set Selenium Timeout" library="SeleniumLibrary">
 <arg>${Timeout}</arg>
 <doc>Sets the timeout that is used by various keywords.</doc>
-<status status="PASS" starttime="20220427 11:52:37.818" endtime="20220427 11:52:37.819"/>
+<status status="PASS" starttime="20220427 16:34:42.519" endtime="20220427 16:34:42.520"/>
 </kw>
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>${url}</arg>
 <arg>${browser}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220427 11:52:37.820" level="INFO">Opening browser 'Chrome' to base url 'https://www.digikala.com/'.</msg>
-<status status="PASS" starttime="20220427 11:52:37.819" endtime="20220427 11:53:03.127"/>
+<msg timestamp="20220427 16:34:42.520" level="INFO">Opening browser 'Chrome' to base url 'https://www.digikala.com/'.</msg>
+<status status="PASS" starttime="20220427 16:34:42.520" endtime="20220427 16:35:25.849"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220427 11:53:03.127" endtime="20220427 11:53:03.616"/>
+<status status="PASS" starttime="20220427 16:35:25.849" endtime="20220427 16:35:26.260"/>
 </kw>
-<status status="PASS" starttime="20220427 11:52:37.817" endtime="20220427 11:53:03.617"/>
+<status status="PASS" starttime="20220427 16:34:42.518" endtime="20220427 16:35:26.261"/>
 </kw>
 <test id="s1-t1" name="This is Availability Test for digikala.com">
 <kw name="Select Category" library="Buy_product">
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>دسته‌بندی کالاها</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220427 11:53:03.627" endtime="20220427 11:53:03.804"/>
+<status status="PASS" starttime="20220427 16:35:26.268" endtime="20220427 16:35:26.464"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${Classification}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220427 11:53:03.804" endtime="20220427 11:53:03.985"/>
+<status status="PASS" starttime="20220427 16:35:26.465" endtime="20220427 16:35:26.610"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${Classification}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:03.985" level="INFO">Clicking element 'xpath://span[@data-cro-id="header-main-menu"]'.</msg>
-<status status="PASS" starttime="20220427 11:53:03.985" endtime="20220427 11:53:04.308"/>
+<msg timestamp="20220427 16:35:26.611" level="INFO">Clicking element 'xpath://span[@data-cro-id="header-main-menu"]'.</msg>
+<status status="PASS" starttime="20220427 16:35:26.611" endtime="20220427 16:35:26.823"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>کالای دیجیتال</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220427 11:53:04.309" endtime="20220427 11:53:04.338"/>
+<status status="PASS" starttime="20220427 16:35:26.823" endtime="20220427 16:35:27.163"/>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>${productClass}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220427 11:53:04.338" level="INFO">Simulating Mouse Over on element 'xpath://a[@href="/main/electronic-devices/"]'.</msg>
-<status status="PASS" starttime="20220427 11:53:04.338" endtime="20220427 11:53:04.782"/>
+<msg timestamp="20220427 16:35:27.164" level="INFO">Simulating Mouse Over on element 'xpath://a[@href="/main/electronic-devices/"]'.</msg>
+<status status="PASS" starttime="20220427 16:35:27.163" endtime="20220427 16:35:27.483"/>
 </kw>
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>گوشی موبایل</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220427 11:53:04.782" endtime="20220427 11:53:04.810"/>
+<status status="PASS" starttime="20220427 16:35:27.483" endtime="20220427 16:35:27.509"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${productSubClass}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220427 11:53:04.811" endtime="20220427 11:53:04.842"/>
+<status status="PASS" starttime="20220427 16:35:27.510" endtime="20220427 16:35:27.543"/>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>${productSubClass}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220427 11:53:04.844" level="INFO">Simulating Mouse Over on element 'xpath://a[@href="/search/category-mobile-phone/"]'.</msg>
-<status status="PASS" starttime="20220427 11:53:04.843" endtime="20220427 11:53:05.143"/>
+<msg timestamp="20220427 16:35:27.544" level="INFO">Simulating Mouse Over on element 'xpath://a[@href="/search/category-mobile-phone/"]'.</msg>
+<status status="PASS" starttime="20220427 16:35:27.544" endtime="20220427 16:35:27.826"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${productSubClass}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:05.147" level="INFO">Clicking element 'xpath://a[@href="/search/category-mobile-phone/"]'.</msg>
-<status status="PASS" starttime="20220427 11:53:05.144" endtime="20220427 11:53:05.511"/>
+<msg timestamp="20220427 16:35:27.827" level="INFO">Clicking element 'xpath://a[@href="/search/category-mobile-phone/"]'.</msg>
+<status status="PASS" starttime="20220427 16:35:27.826" endtime="20220427 16:35:28.231"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:03.624" endtime="20220427 11:53:05.511"/>
+<status status="PASS" starttime="20220427 16:35:26.266" endtime="20220427 16:35:28.231"/>
 </kw>
 <kw name="Click" library="commonfunctionality">
 <arg>${BestSelling}</arg>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${arg}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220427 11:53:05.514" endtime="20220427 11:53:05.974"/>
+<status status="PASS" starttime="20220427 16:35:28.235" endtime="20220427 16:35:28.928"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Scroll Element Into View</arg>
@@ -93,14 +93,14 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${arg}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220427 11:53:05.975" endtime="20220427 11:53:06.269"/>
+<status status="PASS" starttime="20220427 16:35:28.929" endtime="20220427 16:35:29.243"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:05.975" endtime="20220427 11:53:06.270"/>
+<status status="PASS" starttime="20220427 16:35:28.928" endtime="20220427 16:35:29.243"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${arg}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220427 11:53:06.270" endtime="20220427 11:53:06.305"/>
+<status status="PASS" starttime="20220427 16:35:29.243" endtime="20220427 16:35:29.279"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Mouse Over</arg>
@@ -109,10 +109,10 @@
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>${arg}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220427 11:53:06.306" level="INFO">Simulating Mouse Over on element 'xpath://div[contains(@data-cro-id, "plp-sort-option") and contains(text(),'پرفروش‌ترین‌')]'.</msg>
-<status status="PASS" starttime="20220427 11:53:06.306" endtime="20220427 11:53:06.602"/>
+<msg timestamp="20220427 16:35:29.281" level="INFO">Simulating Mouse Over on element 'xpath://div[contains(@data-cro-id, "plp-sort-option") and contains(text(),'پرفروش‌ترین‌')]'.</msg>
+<status status="PASS" starttime="20220427 16:35:29.280" endtime="20220427 16:35:29.583"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:06.305" endtime="20220427 11:53:06.603"/>
+<status status="PASS" starttime="20220427 16:35:29.279" endtime="20220427 16:35:29.583"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>2 min</arg>
@@ -123,12 +123,12 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${arg}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:06.605" level="INFO">Clicking element 'xpath://div[contains(@data-cro-id, "plp-sort-option") and contains(text(),'پرفروش‌ترین‌')]'.</msg>
-<status status="PASS" starttime="20220427 11:53:06.604" endtime="20220427 11:53:06.872"/>
+<msg timestamp="20220427 16:35:29.585" level="INFO">Clicking element 'xpath://div[contains(@data-cro-id, "plp-sort-option") and contains(text(),'پرفروش‌ترین‌')]'.</msg>
+<status status="PASS" starttime="20220427 16:35:29.584" endtime="20220427 16:35:29.798"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:06.603" endtime="20220427 11:53:06.872"/>
+<status status="PASS" starttime="20220427 16:35:29.583" endtime="20220427 16:35:29.798"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:05.512" endtime="20220427 11:53:06.872"/>
+<status status="PASS" starttime="20220427 16:35:28.234" endtime="20220427 16:35:29.798"/>
 </kw>
 <kw name="Add Filter" library="commonfunctionality">
 <arg>برند</arg>
@@ -139,15 +139,15 @@
 <kw name="Wait Until Page Contains" library="SeleniumLibrary">
 <arg>${text}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" starttime="20220427 11:53:06.876" endtime="20220427 11:53:06.918"/>
+<status status="PASS" starttime="20220427 16:35:29.803" endtime="20220427 16:35:29.847"/>
 </kw>
 <kw name="Page Should Contain" library="SeleniumLibrary">
 <arg>${text}</arg>
 <doc>Verifies that current page contains ``text``.</doc>
-<msg timestamp="20220427 11:53:06.951" level="INFO">Current page contains text 'برند'.</msg>
-<status status="PASS" starttime="20220427 11:53:06.918" endtime="20220427 11:53:06.951"/>
+<msg timestamp="20220427 16:35:29.883" level="INFO">Current page contains text 'برند'.</msg>
+<status status="PASS" starttime="20220427 16:35:29.847" endtime="20220427 16:35:29.883"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:06.875" endtime="20220427 11:53:06.952"/>
+<status status="PASS" starttime="20220427 16:35:29.801" endtime="20220427 16:35:29.883"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Scroll Element Into View</arg>
@@ -156,14 +156,14 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${filter}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220427 11:53:06.953" endtime="20220427 11:53:07.521"/>
+<status status="PASS" starttime="20220427 16:35:29.885" endtime="20220427 16:35:30.502"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:06.952" endtime="20220427 11:53:07.521"/>
+<status status="PASS" starttime="20220427 16:35:29.885" endtime="20220427 16:35:30.502"/>
 </kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
 <arg>${filter}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220427 11:53:07.522" endtime="20220427 11:53:07.571"/>
+<status status="PASS" starttime="20220427 16:35:30.502" endtime="20220427 16:35:30.541"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>2 min</arg>
@@ -174,15 +174,15 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${filter}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:07.573" level="INFO">Clicking element 'xpath://div[contains(@class, "text-subtitle-strong d-flex ai-center") and contains(text(),'برند')]'.</msg>
-<status status="PASS" starttime="20220427 11:53:07.572" endtime="20220427 11:53:07.742"/>
+<msg timestamp="20220427 16:35:30.542" level="INFO">Clicking element 'xpath://div[contains(@class, "text-subtitle-strong d-flex ai-center") and contains(text(),'برند')]'.</msg>
+<status status="PASS" starttime="20220427 16:35:30.542" endtime="20220427 16:35:30.706"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:07.572" endtime="20220427 11:53:07.742"/>
+<status status="PASS" starttime="20220427 16:35:30.541" endtime="20220427 16:35:30.706"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
 <arg>${subFilter}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220427 11:53:07.743" endtime="20220427 11:53:07.802"/>
+<status status="PASS" starttime="20220427 16:35:30.707" endtime="20220427 16:35:30.763"/>
 </kw>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
 <arg>Scroll Element Into View</arg>
@@ -191,15 +191,15 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${subFilter}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220427 11:53:07.802" endtime="20220427 11:53:08.088"/>
+<status status="PASS" starttime="20220427 16:35:30.763" endtime="20220427 16:35:31.050"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:07.802" endtime="20220427 11:53:08.089"/>
+<status status="PASS" starttime="20220427 16:35:30.763" endtime="20220427 16:35:31.050"/>
 </kw>
 <kw name="Mouse Over" library="SeleniumLibrary">
 <arg>${subFilter}</arg>
 <doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220427 11:53:08.090" level="INFO">Simulating Mouse Over on element 'xpath://div[contains(@class, "text-subtitle-strong") and contains(text(),'اپل')]'.</msg>
-<status status="PASS" starttime="20220427 11:53:08.089" endtime="20220427 11:53:08.391"/>
+<msg timestamp="20220427 16:35:31.052" level="INFO">Simulating Mouse Over on element 'xpath://div[contains(@class, "text-subtitle-strong") and contains(text(),'اپل')]'.</msg>
+<status status="PASS" starttime="20220427 16:35:31.051" endtime="20220427 16:35:31.380"/>
 </kw>
 <kw name="Wait Until Keyword Succeeds" library="BuiltIn">
 <arg>2 min</arg>
@@ -210,17 +210,27 @@
 <kw name="Click Element" library="SeleniumLibrary">
 <arg>${subFilter}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:08.395" level="INFO">Clicking element 'xpath://div[contains(@class, "text-subtitle-strong") and contains(text(),'اپل')]'.</msg>
-<status status="PASS" starttime="20220427 11:53:08.394" endtime="20220427 11:53:08.679"/>
+<msg timestamp="20220427 16:35:31.383" level="INFO">Clicking element 'xpath://div[contains(@class, "text-subtitle-strong") and contains(text(),'اپل')]'.</msg>
+<status status="PASS" starttime="20220427 16:35:31.382" endtime="20220427 16:35:31.603"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:08.392" endtime="20220427 11:53:08.679"/>
+<status status="PASS" starttime="20220427 16:35:31.381" endtime="20220427 16:35:31.603"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:06.873" endtime="20220427 11:53:08.679"/>
+<status status="PASS" starttime="20220427 16:35:29.799" endtime="20220427 16:35:31.604"/>
 </kw>
 <kw name="Next Page" library="Availability">
+<kw name="Set Focus To Element" library="SeleniumLibrary">
+<arg>${NextPage}</arg>
+<doc>Sets the focus to the element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220427 16:35:31.608" endtime="20220427 16:35:31.666"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>${NextPage}</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20220427 16:35:31.666" endtime="20220427 16:35:31.710"/>
+</kw>
 <for flavor="IN RANGE">
 <var>${i}</var>
-<value>10</value>
+<value>100</value>
 <iter>
 <var name="${i}">0</var>
 <kw name="Run Keyword And Ignore Error" library="BuiltIn">
@@ -232,17 +242,17 @@
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:09.520" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:08.818" endtime="20220427 11:53:09.520"/>
+<msg timestamp="20220427 16:35:32.532" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220427 16:35:32.068" endtime="20220427 16:35:32.532"/>
 </kw>
-<msg timestamp="20220427 11:53:09.525" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+<msg timestamp="20220427 16:35:32.541" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
   (Session info: chrome=100.0.4896.127)
 </msg>
-<status status="FAIL" starttime="20220427 11:53:08.684" endtime="20220427 11:53:09.526"/>
+<status status="FAIL" starttime="20220427 16:35:31.712" endtime="20220427 16:35:32.541"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:08.683" endtime="20220427 11:53:09.526"/>
+<status status="PASS" starttime="20220427 16:35:31.711" endtime="20220427 16:35:32.541"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:08.683" endtime="20220427 11:53:09.526"/>
+<status status="PASS" starttime="20220427 16:35:31.711" endtime="20220427 16:35:32.541"/>
 </iter>
 <iter>
 <var name="${i}">1</var>
@@ -253,19 +263,11 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${assertion}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:09.991" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:09.668" endtime="20220427 11:53:09.992"/>
+<status status="PASS" starttime="20220427 16:35:32.542" endtime="20220427 16:35:33.142"/>
 </kw>
-<msg timestamp="20220427 11:53:09.994" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:09.526" endtime="20220427 11:53:09.994"/>
+<status status="PASS" starttime="20220427 16:35:32.542" endtime="20220427 16:35:33.142"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:09.526" endtime="20220427 11:53:09.994"/>
-</kw>
-<status status="PASS" starttime="20220427 11:53:09.526" endtime="20220427 11:53:09.994"/>
+<status status="PASS" starttime="20220427 16:35:32.542" endtime="20220427 16:35:33.142"/>
 </iter>
 <iter>
 <var name="${i}">2</var>
@@ -278,17 +280,17 @@
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:10.429" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-3.png"&gt;&lt;img src="selenium-screenshot-3.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:10.085" endtime="20220427 11:53:10.429"/>
+<msg timestamp="20220427 16:35:33.768" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220427 16:35:33.268" endtime="20220427 16:35:33.768"/>
 </kw>
-<msg timestamp="20220427 11:53:10.433" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+<msg timestamp="20220427 16:35:33.771" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
   (Session info: chrome=100.0.4896.127)
 </msg>
-<status status="FAIL" starttime="20220427 11:53:09.995" endtime="20220427 11:53:10.433"/>
+<status status="FAIL" starttime="20220427 16:35:33.143" endtime="20220427 16:35:33.771"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:09.995" endtime="20220427 11:53:10.433"/>
+<status status="PASS" starttime="20220427 16:35:33.143" endtime="20220427 16:35:33.771"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:09.995" endtime="20220427 11:53:10.433"/>
+<status status="PASS" starttime="20220427 16:35:33.142" endtime="20220427 16:35:33.771"/>
 </iter>
 <iter>
 <var name="${i}">3</var>
@@ -299,11 +301,11 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${assertion}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220427 11:53:10.434" endtime="20220427 11:53:10.917"/>
+<status status="PASS" starttime="20220427 16:35:33.775" endtime="20220427 16:35:34.347"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:10.434" endtime="20220427 11:53:10.917"/>
+<status status="PASS" starttime="20220427 16:35:33.772" endtime="20220427 16:35:34.347"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:10.433" endtime="20220427 11:53:10.918"/>
+<status status="PASS" starttime="20220427 16:35:33.771" endtime="20220427 16:35:34.347"/>
 </iter>
 <iter>
 <var name="${i}">4</var>
@@ -316,17 +318,17 @@
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:11.572" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:11.104" endtime="20220427 11:53:11.572"/>
+<msg timestamp="20220427 16:35:35.114" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-30.png"&gt;&lt;img src="selenium-screenshot-30.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220427 16:35:34.618" endtime="20220427 16:35:35.114"/>
 </kw>
-<msg timestamp="20220427 11:53:11.575" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+<msg timestamp="20220427 16:35:35.116" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
   (Session info: chrome=100.0.4896.127)
 </msg>
-<status status="FAIL" starttime="20220427 11:53:10.919" endtime="20220427 11:53:11.576"/>
+<status status="FAIL" starttime="20220427 16:35:34.348" endtime="20220427 16:35:35.116"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:10.919" endtime="20220427 11:53:11.576"/>
+<status status="PASS" starttime="20220427 16:35:34.348" endtime="20220427 16:35:35.117"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:10.918" endtime="20220427 11:53:11.576"/>
+<status status="PASS" starttime="20220427 16:35:34.347" endtime="20220427 16:35:35.117"/>
 </iter>
 <iter>
 <var name="${i}">5</var>
@@ -337,19 +339,11 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${assertion}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:12.048" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:11.690" endtime="20220427 11:53:12.048"/>
+<status status="PASS" starttime="20220427 16:35:35.118" endtime="20220427 16:35:35.769"/>
 </kw>
-<msg timestamp="20220427 11:53:12.050" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:11.578" endtime="20220427 11:53:12.051"/>
+<status status="PASS" starttime="20220427 16:35:35.117" endtime="20220427 16:35:35.769"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:11.577" endtime="20220427 11:53:12.052"/>
-</kw>
-<status status="PASS" starttime="20220427 11:53:11.576" endtime="20220427 11:53:12.052"/>
+<status status="PASS" starttime="20220427 16:35:35.117" endtime="20220427 16:35:35.769"/>
 </iter>
 <iter>
 <var name="${i}">6</var>
@@ -360,11 +354,19 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${assertion}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220427 11:53:12.053" endtime="20220427 11:53:12.384"/>
+<kw name="Capture Page Screenshot" library="SeleniumLibrary">
+<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
+<msg timestamp="20220427 16:35:36.321" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220427 16:35:35.837" endtime="20220427 16:35:36.321"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:12.052" endtime="20220427 11:53:12.384"/>
+<msg timestamp="20220427 16:35:36.324" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=100.0.4896.127)
+</msg>
+<status status="FAIL" starttime="20220427 16:35:35.770" endtime="20220427 16:35:36.324"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:12.052" endtime="20220427 11:53:12.384"/>
+<status status="PASS" starttime="20220427 16:35:35.769" endtime="20220427 16:35:36.324"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:35.769" endtime="20220427 16:35:36.324"/>
 </iter>
 <iter>
 <var name="${i}">7</var>
@@ -375,19 +377,11 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${assertion}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:12.999" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-6.png"&gt;&lt;img src="selenium-screenshot-6.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:12.505" endtime="20220427 11:53:12.999"/>
+<status status="PASS" starttime="20220427 16:35:36.327" endtime="20220427 16:35:36.819"/>
 </kw>
-<msg timestamp="20220427 11:53:13.006" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:12.385" endtime="20220427 11:53:13.006"/>
+<status status="PASS" starttime="20220427 16:35:36.325" endtime="20220427 16:35:36.819"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:12.385" endtime="20220427 11:53:13.006"/>
-</kw>
-<status status="PASS" starttime="20220427 11:53:12.384" endtime="20220427 11:53:13.006"/>
+<status status="PASS" starttime="20220427 16:35:36.324" endtime="20220427 16:35:36.819"/>
 </iter>
 <iter>
 <var name="${i}">8</var>
@@ -398,19 +392,11 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${assertion}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:13.692" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-7.png"&gt;&lt;img src="selenium-screenshot-7.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:13.146" endtime="20220427 11:53:13.692"/>
+<status status="PASS" starttime="20220427 16:35:36.820" endtime="20220427 16:35:37.123"/>
 </kw>
-<msg timestamp="20220427 11:53:13.694" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:13.007" endtime="20220427 11:53:13.694"/>
+<status status="PASS" starttime="20220427 16:35:36.820" endtime="20220427 16:35:37.123"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:13.007" endtime="20220427 11:53:13.694"/>
-</kw>
-<status status="PASS" starttime="20220427 11:53:13.006" endtime="20220427 11:53:13.694"/>
+<status status="PASS" starttime="20220427 16:35:36.819" endtime="20220427 16:35:37.123"/>
 </iter>
 <iter>
 <var name="${i}">9</var>
@@ -421,407 +407,1405 @@
 <kw name="Scroll Element Into View" library="SeleniumLibrary">
 <arg>${assertion}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:14.436" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-8.png"&gt;&lt;img src="selenium-screenshot-8.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:13.917" endtime="20220427 11:53:14.437"/>
+<status status="PASS" starttime="20220427 16:35:37.124" endtime="20220427 16:35:37.420"/>
 </kw>
-<msg timestamp="20220427 11:53:14.442" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:13.695" endtime="20220427 11:53:14.442"/>
+<status status="PASS" starttime="20220427 16:35:37.123" endtime="20220427 16:35:37.420"/>
 </kw>
-<status status="PASS" starttime="20220427 11:53:13.694" endtime="20220427 11:53:14.444"/>
-</kw>
-<status status="PASS" starttime="20220427 11:53:13.694" endtime="20220427 11:53:14.444"/>
+<status status="PASS" starttime="20220427 16:35:37.123" endtime="20220427 16:35:37.420"/>
 </iter>
-<status status="PASS" starttime="20220427 11:53:08.682" endtime="20220427 11:53:14.444"/>
+<iter>
+<var name="${i}">10</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:37.421" endtime="20220427 16:35:37.720"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:37.421" endtime="20220427 16:35:37.720"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:37.421" endtime="20220427 16:35:37.721"/>
+</iter>
+<iter>
+<var name="${i}">11</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:37.723" endtime="20220427 16:35:38.042"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:37.722" endtime="20220427 16:35:38.042"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:37.721" endtime="20220427 16:35:38.043"/>
+</iter>
+<iter>
+<var name="${i}">12</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:38.044" endtime="20220427 16:35:38.353"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:38.043" endtime="20220427 16:35:38.353"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:38.043" endtime="20220427 16:35:38.353"/>
+</iter>
+<iter>
+<var name="${i}">13</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:38.354" endtime="20220427 16:35:38.635"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:38.353" endtime="20220427 16:35:38.636"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:38.353" endtime="20220427 16:35:38.636"/>
+</iter>
+<iter>
+<var name="${i}">14</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:38.637" endtime="20220427 16:35:38.936"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:38.636" endtime="20220427 16:35:38.936"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:38.636" endtime="20220427 16:35:38.936"/>
+</iter>
+<iter>
+<var name="${i}">15</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:38.937" endtime="20220427 16:35:39.300"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:38.937" endtime="20220427 16:35:39.301"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:38.937" endtime="20220427 16:35:39.301"/>
+</iter>
+<iter>
+<var name="${i}">16</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:39.302" endtime="20220427 16:35:39.587"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:39.301" endtime="20220427 16:35:39.587"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:39.301" endtime="20220427 16:35:39.587"/>
+</iter>
+<iter>
+<var name="${i}">17</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:39.589" endtime="20220427 16:35:39.915"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:39.588" endtime="20220427 16:35:39.916"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:39.588" endtime="20220427 16:35:39.917"/>
+</iter>
+<iter>
+<var name="${i}">18</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:39.922" endtime="20220427 16:35:40.244"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:39.920" endtime="20220427 16:35:40.245"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:39.918" endtime="20220427 16:35:40.245"/>
+</iter>
+<iter>
+<var name="${i}">19</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:40.250" endtime="20220427 16:35:40.588"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:40.247" endtime="20220427 16:35:40.588"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:40.246" endtime="20220427 16:35:40.588"/>
+</iter>
+<iter>
+<var name="${i}">20</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:40.590" endtime="20220427 16:35:40.916"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:40.589" endtime="20220427 16:35:40.917"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:40.589" endtime="20220427 16:35:40.918"/>
+</iter>
+<iter>
+<var name="${i}">21</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:40.925" endtime="20220427 16:35:41.260"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:40.923" endtime="20220427 16:35:41.261"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:40.920" endtime="20220427 16:35:41.261"/>
+</iter>
+<iter>
+<var name="${i}">22</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:41.264" endtime="20220427 16:35:41.595"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:41.262" endtime="20220427 16:35:41.595"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:41.261" endtime="20220427 16:35:41.595"/>
+</iter>
+<iter>
+<var name="${i}">23</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:41.597" endtime="20220427 16:35:41.923"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:41.596" endtime="20220427 16:35:41.923"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:41.596" endtime="20220427 16:35:41.923"/>
+</iter>
+<iter>
+<var name="${i}">24</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:41.925" endtime="20220427 16:35:42.251"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:41.924" endtime="20220427 16:35:42.252"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:41.924" endtime="20220427 16:35:42.252"/>
+</iter>
+<iter>
+<var name="${i}">25</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:42.254" endtime="20220427 16:35:42.580"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:42.253" endtime="20220427 16:35:42.581"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:42.252" endtime="20220427 16:35:42.581"/>
+</iter>
+<iter>
+<var name="${i}">26</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:42.584" endtime="20220427 16:35:42.919"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:42.583" endtime="20220427 16:35:42.920"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:42.582" endtime="20220427 16:35:42.920"/>
+</iter>
+<iter>
+<var name="${i}">27</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:42.923" endtime="20220427 16:35:43.252"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:42.921" endtime="20220427 16:35:43.253"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:42.921" endtime="20220427 16:35:43.253"/>
+</iter>
+<iter>
+<var name="${i}">28</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:43.256" endtime="20220427 16:35:43.597"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:43.255" endtime="20220427 16:35:43.597"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:43.254" endtime="20220427 16:35:43.597"/>
+</iter>
+<iter>
+<var name="${i}">29</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:43.601" endtime="20220427 16:35:43.939"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:43.599" endtime="20220427 16:35:43.940"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:43.598" endtime="20220427 16:35:43.940"/>
+</iter>
+<iter>
+<var name="${i}">30</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:43.944" endtime="20220427 16:35:44.261"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:43.942" endtime="20220427 16:35:44.261"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:43.941" endtime="20220427 16:35:44.261"/>
+</iter>
+<iter>
+<var name="${i}">31</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:44.263" endtime="20220427 16:35:44.575"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:44.262" endtime="20220427 16:35:44.575"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:44.262" endtime="20220427 16:35:44.575"/>
+</iter>
+<iter>
+<var name="${i}">32</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:44.577" endtime="20220427 16:35:44.890"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:44.576" endtime="20220427 16:35:44.891"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:44.575" endtime="20220427 16:35:44.891"/>
+</iter>
+<iter>
+<var name="${i}">33</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:44.895" endtime="20220427 16:35:45.220"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:44.893" endtime="20220427 16:35:45.221"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:44.892" endtime="20220427 16:35:45.221"/>
+</iter>
+<iter>
+<var name="${i}">34</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:45.224" endtime="20220427 16:35:45.567"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:45.223" endtime="20220427 16:35:45.568"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:45.222" endtime="20220427 16:35:45.568"/>
+</iter>
+<iter>
+<var name="${i}">35</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:45.571" endtime="20220427 16:35:45.906"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:45.570" endtime="20220427 16:35:45.907"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:45.569" endtime="20220427 16:35:45.907"/>
+</iter>
+<iter>
+<var name="${i}">36</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:45.912" endtime="20220427 16:35:46.231"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:45.910" endtime="20220427 16:35:46.231"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:45.908" endtime="20220427 16:35:46.231"/>
+</iter>
+<iter>
+<var name="${i}">37</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:46.234" endtime="20220427 16:35:46.601"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:46.233" endtime="20220427 16:35:46.601"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:46.232" endtime="20220427 16:35:46.602"/>
+</iter>
+<iter>
+<var name="${i}">38</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:46.607" endtime="20220427 16:35:46.935"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:46.604" endtime="20220427 16:35:46.935"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:46.602" endtime="20220427 16:35:46.935"/>
+</iter>
+<iter>
+<var name="${i}">39</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:46.936" endtime="20220427 16:35:47.229"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:46.936" endtime="20220427 16:35:47.229"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:46.936" endtime="20220427 16:35:47.229"/>
+</iter>
+<iter>
+<var name="${i}">40</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:47.230" endtime="20220427 16:35:47.551"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:47.230" endtime="20220427 16:35:47.551"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:47.230" endtime="20220427 16:35:47.551"/>
+</iter>
+<iter>
+<var name="${i}">41</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:47.556" endtime="20220427 16:35:47.886"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:47.553" endtime="20220427 16:35:47.886"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:47.552" endtime="20220427 16:35:47.886"/>
+</iter>
+<iter>
+<var name="${i}">42</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:47.888" endtime="20220427 16:35:48.197"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:47.887" endtime="20220427 16:35:48.197"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:47.886" endtime="20220427 16:35:48.197"/>
+</iter>
+<iter>
+<var name="${i}">43</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:48.198" endtime="20220427 16:35:48.521"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:48.198" endtime="20220427 16:35:48.522"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:48.198" endtime="20220427 16:35:48.524"/>
+</iter>
+<iter>
+<var name="${i}">44</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:48.529" endtime="20220427 16:35:48.854"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:48.526" endtime="20220427 16:35:48.854"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:48.525" endtime="20220427 16:35:48.854"/>
+</iter>
+<iter>
+<var name="${i}">45</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:48.855" endtime="20220427 16:35:49.170"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:48.855" endtime="20220427 16:35:49.170"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:48.854" endtime="20220427 16:35:49.170"/>
+</iter>
+<iter>
+<var name="${i}">46</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:49.174" endtime="20220427 16:35:49.509"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:49.172" endtime="20220427 16:35:49.509"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:49.171" endtime="20220427 16:35:49.509"/>
+</iter>
+<iter>
+<var name="${i}">47</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:49.512" endtime="20220427 16:35:49.820"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:49.511" endtime="20220427 16:35:49.820"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:49.510" endtime="20220427 16:35:49.820"/>
+</iter>
+<iter>
+<var name="${i}">48</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:49.823" endtime="20220427 16:35:50.163"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:49.822" endtime="20220427 16:35:50.164"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:49.821" endtime="20220427 16:35:50.165"/>
+</iter>
+<iter>
+<var name="${i}">49</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:50.171" endtime="20220427 16:35:50.511"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:50.168" endtime="20220427 16:35:50.511"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:50.167" endtime="20220427 16:35:50.512"/>
+</iter>
+<iter>
+<var name="${i}">50</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:50.517" endtime="20220427 16:35:50.869"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:50.515" endtime="20220427 16:35:50.869"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:50.513" endtime="20220427 16:35:50.870"/>
+</iter>
+<iter>
+<var name="${i}">51</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:50.872" endtime="20220427 16:35:51.208"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:50.871" endtime="20220427 16:35:51.209"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:50.870" endtime="20220427 16:35:51.209"/>
+</iter>
+<iter>
+<var name="${i}">52</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:51.212" endtime="20220427 16:35:51.535"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:51.211" endtime="20220427 16:35:51.535"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:51.210" endtime="20220427 16:35:51.535"/>
+</iter>
+<iter>
+<var name="${i}">53</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:51.537" endtime="20220427 16:35:51.862"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:51.536" endtime="20220427 16:35:51.862"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:51.535" endtime="20220427 16:35:51.862"/>
+</iter>
+<iter>
+<var name="${i}">54</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:51.864" endtime="20220427 16:35:52.175"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:51.863" endtime="20220427 16:35:52.176"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:51.863" endtime="20220427 16:35:52.177"/>
+</iter>
+<iter>
+<var name="${i}">55</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:52.179" endtime="20220427 16:35:52.508"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:52.178" endtime="20220427 16:35:52.508"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:52.177" endtime="20220427 16:35:52.508"/>
+</iter>
+<iter>
+<var name="${i}">56</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:52.511" endtime="20220427 16:35:52.849"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:52.510" endtime="20220427 16:35:52.849"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:52.509" endtime="20220427 16:35:52.849"/>
+</iter>
+<iter>
+<var name="${i}">57</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:52.853" endtime="20220427 16:35:53.171"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:52.851" endtime="20220427 16:35:53.171"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:52.850" endtime="20220427 16:35:53.172"/>
+</iter>
+<iter>
+<var name="${i}">58</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:53.174" endtime="20220427 16:35:53.497"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:53.173" endtime="20220427 16:35:53.497"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:53.172" endtime="20220427 16:35:53.497"/>
+</iter>
+<iter>
+<var name="${i}">59</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:53.499" endtime="20220427 16:35:53.824"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:53.498" endtime="20220427 16:35:53.824"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:53.498" endtime="20220427 16:35:53.824"/>
+</iter>
+<iter>
+<var name="${i}">60</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:53.826" endtime="20220427 16:35:54.175"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:53.825" endtime="20220427 16:35:54.176"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:53.825" endtime="20220427 16:35:54.176"/>
+</iter>
+<iter>
+<var name="${i}">61</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:54.179" endtime="20220427 16:35:54.491"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:54.177" endtime="20220427 16:35:54.491"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:54.176" endtime="20220427 16:35:54.491"/>
+</iter>
+<iter>
+<var name="${i}">62</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:54.493" endtime="20220427 16:35:54.834"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:54.492" endtime="20220427 16:35:54.835"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:54.492" endtime="20220427 16:35:54.835"/>
+</iter>
+<iter>
+<var name="${i}">63</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:54.838" endtime="20220427 16:35:55.181"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:54.836" endtime="20220427 16:35:55.181"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:54.836" endtime="20220427 16:35:55.182"/>
+</iter>
+<iter>
+<var name="${i}">64</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:55.185" endtime="20220427 16:35:55.512"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:55.183" endtime="20220427 16:35:55.512"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:55.182" endtime="20220427 16:35:55.513"/>
+</iter>
+<iter>
+<var name="${i}">65</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:55.519" endtime="20220427 16:35:55.854"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:55.516" endtime="20220427 16:35:55.854"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:55.513" endtime="20220427 16:35:55.854"/>
+</iter>
+<iter>
+<var name="${i}">66</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:55.855" endtime="20220427 16:35:56.164"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:55.855" endtime="20220427 16:35:56.165"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:55.854" endtime="20220427 16:35:56.165"/>
+</iter>
+<iter>
+<var name="${i}">67</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:56.166" endtime="20220427 16:35:56.497"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:56.166" endtime="20220427 16:35:56.498"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:56.165" endtime="20220427 16:35:56.499"/>
+</iter>
+<iter>
+<var name="${i}">68</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:56.503" endtime="20220427 16:35:56.857"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:56.502" endtime="20220427 16:35:56.857"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:56.500" endtime="20220427 16:35:56.858"/>
+</iter>
+<iter>
+<var name="${i}">69</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:56.860" endtime="20220427 16:35:57.182"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:56.859" endtime="20220427 16:35:57.183"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:56.858" endtime="20220427 16:35:57.183"/>
+</iter>
+<iter>
+<var name="${i}">70</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:57.185" endtime="20220427 16:35:57.508"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:57.184" endtime="20220427 16:35:57.508"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:57.183" endtime="20220427 16:35:57.509"/>
+</iter>
+<iter>
+<var name="${i}">71</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:57.511" endtime="20220427 16:35:57.838"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:57.510" endtime="20220427 16:35:57.839"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:57.509" endtime="20220427 16:35:57.840"/>
+</iter>
+<iter>
+<var name="${i}">72</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:57.844" endtime="20220427 16:35:58.183"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:57.842" endtime="20220427 16:35:58.184"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:57.840" endtime="20220427 16:35:58.184"/>
+</iter>
+<iter>
+<var name="${i}">73</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:58.187" endtime="20220427 16:35:58.515"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:58.186" endtime="20220427 16:35:58.515"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:58.185" endtime="20220427 16:35:58.516"/>
+</iter>
+<iter>
+<var name="${i}">74</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:58.522" endtime="20220427 16:35:58.853"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:58.518" endtime="20220427 16:35:58.854"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:58.517" endtime="20220427 16:35:58.854"/>
+</iter>
+<iter>
+<var name="${i}">75</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:58.857" endtime="20220427 16:35:59.177"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:58.856" endtime="20220427 16:35:59.177"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:58.855" endtime="20220427 16:35:59.177"/>
+</iter>
+<iter>
+<var name="${i}">76</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:59.179" endtime="20220427 16:35:59.506"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:59.178" endtime="20220427 16:35:59.506"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:59.177" endtime="20220427 16:35:59.507"/>
+</iter>
+<iter>
+<var name="${i}">77</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:59.510" endtime="20220427 16:35:59.849"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:59.509" endtime="20220427 16:35:59.849"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:59.508" endtime="20220427 16:35:59.850"/>
+</iter>
+<iter>
+<var name="${i}">78</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:35:59.856" endtime="20220427 16:36:00.175"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:59.853" endtime="20220427 16:36:00.176"/>
+</kw>
+<status status="PASS" starttime="20220427 16:35:59.851" endtime="20220427 16:36:00.176"/>
+</iter>
+<iter>
+<var name="${i}">79</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:00.177" endtime="20220427 16:36:00.486"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:00.176" endtime="20220427 16:36:00.486"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:00.176" endtime="20220427 16:36:00.487"/>
+</iter>
+<iter>
+<var name="${i}">80</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:00.488" endtime="20220427 16:36:00.799"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:00.487" endtime="20220427 16:36:00.800"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:00.487" endtime="20220427 16:36:00.800"/>
+</iter>
+<iter>
+<var name="${i}">81</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:00.801" endtime="20220427 16:36:01.096"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:00.800" endtime="20220427 16:36:01.096"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:00.800" endtime="20220427 16:36:01.097"/>
+</iter>
+<iter>
+<var name="${i}">82</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:01.099" endtime="20220427 16:36:01.440"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:01.098" endtime="20220427 16:36:01.441"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:01.097" endtime="20220427 16:36:01.441"/>
+</iter>
+<iter>
+<var name="${i}">83</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:01.446" endtime="20220427 16:36:01.783"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:01.443" endtime="20220427 16:36:01.783"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:01.442" endtime="20220427 16:36:01.783"/>
+</iter>
+<iter>
+<var name="${i}">84</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:01.785" endtime="20220427 16:36:02.129"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:01.784" endtime="20220427 16:36:02.129"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:01.784" endtime="20220427 16:36:02.130"/>
+</iter>
+<iter>
+<var name="${i}">85</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:02.132" endtime="20220427 16:36:02.551"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:02.131" endtime="20220427 16:36:02.552"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:02.130" endtime="20220427 16:36:02.552"/>
+</iter>
+<iter>
+<var name="${i}">86</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:02.556" endtime="20220427 16:36:02.878"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:02.553" endtime="20220427 16:36:02.879"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:02.553" endtime="20220427 16:36:02.879"/>
+</iter>
+<iter>
+<var name="${i}">87</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:02.881" endtime="20220427 16:36:03.209"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:02.880" endtime="20220427 16:36:03.209"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:02.879" endtime="20220427 16:36:03.210"/>
+</iter>
+<iter>
+<var name="${i}">88</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:03.213" endtime="20220427 16:36:03.552"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:03.211" endtime="20220427 16:36:03.553"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:03.210" endtime="20220427 16:36:03.553"/>
+</iter>
+<iter>
+<var name="${i}">89</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:03.556" endtime="20220427 16:36:03.870"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:03.554" endtime="20220427 16:36:03.870"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:03.553" endtime="20220427 16:36:03.871"/>
+</iter>
+<iter>
+<var name="${i}">90</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:03.875" endtime="20220427 16:36:04.208"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:03.872" endtime="20220427 16:36:04.209"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:03.871" endtime="20220427 16:36:04.209"/>
+</iter>
+<iter>
+<var name="${i}">91</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:04.213" endtime="20220427 16:36:04.543"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:04.211" endtime="20220427 16:36:04.543"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:04.210" endtime="20220427 16:36:04.543"/>
+</iter>
+<iter>
+<var name="${i}">92</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:04.549" endtime="20220427 16:36:04.885"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:04.546" endtime="20220427 16:36:04.885"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:04.544" endtime="20220427 16:36:04.885"/>
+</iter>
+<iter>
+<var name="${i}">93</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:04.887" endtime="20220427 16:36:05.208"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:04.886" endtime="20220427 16:36:05.209"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:04.886" endtime="20220427 16:36:05.209"/>
+</iter>
+<iter>
+<var name="${i}">94</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:05.212" endtime="20220427 16:36:05.540"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:05.210" endtime="20220427 16:36:05.541"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:05.210" endtime="20220427 16:36:05.541"/>
+</iter>
+<iter>
+<var name="${i}">95</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:05.547" endtime="20220427 16:36:05.884"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:05.544" endtime="20220427 16:36:05.884"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:05.541" endtime="20220427 16:36:05.884"/>
+</iter>
+<iter>
+<var name="${i}">96</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:05.886" endtime="20220427 16:36:06.189"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:05.885" endtime="20220427 16:36:06.190"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:05.885" endtime="20220427 16:36:06.190"/>
+</iter>
+<iter>
+<var name="${i}">97</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:06.193" endtime="20220427 16:36:06.517"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:06.191" endtime="20220427 16:36:06.517"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:06.190" endtime="20220427 16:36:06.517"/>
+</iter>
+<iter>
+<var name="${i}">98</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:06.519" endtime="20220427 16:36:06.829"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:06.518" endtime="20220427 16:36:06.830"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:06.518" endtime="20220427 16:36:06.830"/>
+</iter>
+<iter>
+<var name="${i}">99</var>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${assertion}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${assertion}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20220427 16:36:06.832" endtime="20220427 16:36:07.157"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:06.831" endtime="20220427 16:36:07.157"/>
+</kw>
+<status status="PASS" starttime="20220427 16:36:06.830" endtime="20220427 16:36:07.157"/>
+</iter>
+<status status="PASS" starttime="20220427 16:35:31.710" endtime="20220427 16:36:07.158"/>
 </for>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<arg>Scroll Element Into View</arg>
-<arg>${assertion}</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>${assertion}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:14.840" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-9.png"&gt;&lt;img src="selenium-screenshot-9.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:14.531" endtime="20220427 11:53:14.840"/>
-</kw>
-<msg timestamp="20220427 11:53:14.845" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:14.446" endtime="20220427 11:53:14.845"/>
-</kw>
-<status status="PASS" starttime="20220427 11:53:14.445" endtime="20220427 11:53:14.845"/>
-</kw>
-<kw name="Sleep" library="BuiltIn">
-<arg>2s</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<msg timestamp="20220427 11:53:16.859" level="INFO">Slept 2 seconds</msg>
-<status status="PASS" starttime="20220427 11:53:14.845" endtime="20220427 11:53:16.860"/>
-</kw>
-<kw name="Set Focus To Element" library="SeleniumLibrary">
-<arg>${NextPage}</arg>
-<doc>Sets the focus to the element identified by ``locator``.</doc>
-<status status="PASS" starttime="20220427 11:53:16.861" endtime="20220427 11:53:16.921"/>
-</kw>
-<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
-<arg>${NextPage}</arg>
-<doc>Waits until the element ``locator`` appears on the current page.</doc>
-<status status="PASS" starttime="20220427 11:53:16.922" endtime="20220427 11:53:16.940"/>
-</kw>
-<kw name="Click" library="commonfunctionality">
-<arg>${NextPage}</arg>
-<kw name="Wait Until Element Is Enabled" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" starttime="20220427 11:53:16.942" endtime="20220427 11:53:16.978"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<arg>Scroll Element Into View</arg>
-<arg>${arg}</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<kw name="Scroll Element Into View" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" starttime="20220427 11:53:16.979" endtime="20220427 11:53:17.278"/>
-</kw>
-<status status="PASS" starttime="20220427 11:53:16.978" endtime="20220427 11:53:17.279"/>
-</kw>
 <kw name="Wait Until Element Is Visible" library="SeleniumLibrary">
-<arg>${arg}</arg>
+<arg>${NextPage}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" starttime="20220427 11:53:17.279" endtime="20220427 11:53:17.330"/>
-</kw>
-<kw name="Run Keyword And Ignore Error" library="BuiltIn">
-<arg>Mouse Over</arg>
-<arg>${arg}</arg>
-<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
-<kw name="Mouse Over" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Simulates hovering the mouse over the element ``locator``.</doc>
-<msg timestamp="20220427 11:53:17.332" level="INFO">Simulating Mouse Over on element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<status status="PASS" starttime="20220427 11:53:17.331" endtime="20220427 11:53:17.637"/>
-</kw>
-<status status="PASS" starttime="20220427 11:53:17.330" endtime="20220427 11:53:17.637"/>
-</kw>
-<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
-<arg>2 min</arg>
-<arg>5 sec</arg>
-<arg>Click Element</arg>
-<arg>${arg}</arg>
-<doc>Runs the specified keyword and retries if it fails.</doc>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:17.641" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:19.113" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-10.png"&gt;&lt;img src="selenium-screenshot-10.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:18.837" endtime="20220427 11:53:19.113"/>
-</kw>
-<msg timestamp="20220427 11:53:19.115" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:17.639" endtime="20220427 11:53:19.115"/>
+<status status="PASS" starttime="20220427 16:36:07.158" endtime="20220427 16:36:07.212"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
+<arg>${NextPage}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:24.121" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
+<msg timestamp="20220427 16:36:07.213" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:25.505" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-11.png"&gt;&lt;img src="selenium-screenshot-11.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:25.232" endtime="20220427 11:53:25.505"/>
+<msg timestamp="20220427 16:36:08.555" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-32.png"&gt;&lt;img src="selenium-screenshot-32.png" width="800px"&gt;&lt;/a&gt;</msg>
+<status status="PASS" starttime="20220427 16:36:08.312" endtime="20220427 16:36:08.555"/>
 </kw>
-<msg timestamp="20220427 11:53:25.507" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
+<msg timestamp="20220427 16:36:08.556" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
   (Session info: chrome=100.0.4896.127)
 </msg>
-<status status="FAIL" starttime="20220427 11:53:24.118" endtime="20220427 11:53:25.507"/>
+<status status="FAIL" starttime="20220427 16:36:07.212" endtime="20220427 16:36:08.557"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:30.526" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:31.846" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-12.png"&gt;&lt;img src="selenium-screenshot-12.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:31.623" endtime="20220427 11:53:31.846"/>
-</kw>
-<msg timestamp="20220427 11:53:31.848" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:30.523" endtime="20220427 11:53:31.848"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:36.864" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:38.343" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-13.png"&gt;&lt;img src="selenium-screenshot-13.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:38.058" endtime="20220427 11:53:38.343"/>
-</kw>
-<msg timestamp="20220427 11:53:38.344" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:36.862" endtime="20220427 11:53:38.344"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:43.349" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:44.705" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-14.png"&gt;&lt;img src="selenium-screenshot-14.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:44.445" endtime="20220427 11:53:44.705"/>
-</kw>
-<msg timestamp="20220427 11:53:44.707" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:43.347" endtime="20220427 11:53:44.707"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:49.724" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:51.166" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-15.png"&gt;&lt;img src="selenium-screenshot-15.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:50.906" endtime="20220427 11:53:51.167"/>
-</kw>
-<msg timestamp="20220427 11:53:51.168" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:49.721" endtime="20220427 11:53:51.168"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:53:56.176" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:53:57.591" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-16.png"&gt;&lt;img src="selenium-screenshot-16.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:53:57.317" endtime="20220427 11:53:57.591"/>
-</kw>
-<msg timestamp="20220427 11:53:57.593" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:56.173" endtime="20220427 11:53:57.593"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:54:02.606" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:54:03.967" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-17.png"&gt;&lt;img src="selenium-screenshot-17.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:54:03.728" endtime="20220427 11:54:03.967"/>
-</kw>
-<msg timestamp="20220427 11:54:03.970" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:54:02.603" endtime="20220427 11:54:03.970"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:54:08.978" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:54:10.303" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-18.png"&gt;&lt;img src="selenium-screenshot-18.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:54:10.041" endtime="20220427 11:54:10.303"/>
-</kw>
-<msg timestamp="20220427 11:54:10.305" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:54:08.977" endtime="20220427 11:54:10.305"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:54:15.309" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:54:16.615" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-19.png"&gt;&lt;img src="selenium-screenshot-19.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:54:16.404" endtime="20220427 11:54:16.616"/>
-</kw>
-<msg timestamp="20220427 11:54:16.617" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:54:15.308" endtime="20220427 11:54:16.617"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:54:21.623" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:54:23.016" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-20.png"&gt;&lt;img src="selenium-screenshot-20.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:54:22.763" endtime="20220427 11:54:23.016"/>
-</kw>
-<msg timestamp="20220427 11:54:23.018" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:54:21.621" endtime="20220427 11:54:23.018"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:54:28.026" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:54:29.444" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-21.png"&gt;&lt;img src="selenium-screenshot-21.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:54:29.199" endtime="20220427 11:54:29.444"/>
-</kw>
-<msg timestamp="20220427 11:54:29.446" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:54:28.023" endtime="20220427 11:54:29.446"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:54:34.452" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:54:35.881" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-22.png"&gt;&lt;img src="selenium-screenshot-22.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:54:35.620" endtime="20220427 11:54:35.881"/>
-</kw>
-<msg timestamp="20220427 11:54:35.882" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:54:34.449" endtime="20220427 11:54:35.882"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:54:40.885" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:54:42.209" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-23.png"&gt;&lt;img src="selenium-screenshot-23.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:54:41.979" endtime="20220427 11:54:42.210"/>
-</kw>
-<msg timestamp="20220427 11:54:42.211" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:54:40.884" endtime="20220427 11:54:42.211"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:54:47.216" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:54:48.647" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-24.png"&gt;&lt;img src="selenium-screenshot-24.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:54:48.349" endtime="20220427 11:54:48.647"/>
-</kw>
-<msg timestamp="20220427 11:54:48.649" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:54:47.215" endtime="20220427 11:54:48.649"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:54:53.657" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:54:55.069" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-25.png"&gt;&lt;img src="selenium-screenshot-25.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:54:54.792" endtime="20220427 11:54:55.069"/>
-</kw>
-<msg timestamp="20220427 11:54:55.071" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:54:53.655" endtime="20220427 11:54:55.071"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:55:00.075" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:55:01.429" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-26.png"&gt;&lt;img src="selenium-screenshot-26.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:55:01.184" endtime="20220427 11:55:01.430"/>
-</kw>
-<msg timestamp="20220427 11:55:01.431" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:55:00.074" endtime="20220427 11:55:01.431"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:55:06.437" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:55:07.784" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-27.png"&gt;&lt;img src="selenium-screenshot-27.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:55:07.528" endtime="20220427 11:55:07.784"/>
-</kw>
-<msg timestamp="20220427 11:55:07.785" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:55:06.436" endtime="20220427 11:55:07.785"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:55:12.803" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:55:14.233" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-28.png"&gt;&lt;img src="selenium-screenshot-28.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:55:13.966" endtime="20220427 11:55:14.233"/>
-</kw>
-<msg timestamp="20220427 11:55:14.235" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:55:12.800" endtime="20220427 11:55:14.235"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>${arg}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220427 11:55:19.244" level="INFO">Clicking element 'xpath://span[contains(text(),'بعدی')]'.</msg>
-<kw name="Capture Page Screenshot" library="SeleniumLibrary">
-<doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220427 11:55:20.657" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-29.png"&gt;&lt;img src="selenium-screenshot-29.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" starttime="20220427 11:55:20.384" endtime="20220427 11:55:20.657"/>
-</kw>
-<msg timestamp="20220427 11:55:20.659" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:55:19.242" endtime="20220427 11:55:20.659"/>
-</kw>
-<msg timestamp="20220427 11:55:20.659" level="FAIL">Keyword 'Click Element' failed after retrying for 2 minutes. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
-  (Session info: chrome=100.0.4896.127)
-</msg>
-<status status="FAIL" starttime="20220427 11:53:17.638" endtime="20220427 11:55:20.660"/>
-</kw>
-<status status="FAIL" starttime="20220427 11:53:16.940" endtime="20220427 11:55:20.661"/>
-</kw>
-<status status="FAIL" starttime="20220427 11:53:08.681" endtime="20220427 11:55:20.662"/>
+<status status="FAIL" starttime="20220427 16:35:31.607" endtime="20220427 16:36:08.557"/>
 </kw>
 <kw name="Find and Select Product" library="commonfunctionality">
 <arg>${PProduct}</arg>
-<status status="NOT RUN" starttime="20220427 11:55:20.663" endtime="20220427 11:55:20.663"/>
+<status status="NOT RUN" starttime="20220427 16:36:08.559" endtime="20220427 16:36:08.559"/>
 </kw>
 <kw name="Know Me" library="Availability">
-<status status="NOT RUN" starttime="20220427 11:55:20.664" endtime="20220427 11:55:20.664"/>
+<status status="NOT RUN" starttime="20220427 16:36:08.560" endtime="20220427 16:36:08.560"/>
 </kw>
-<status status="FAIL" starttime="20220427 11:53:03.617" endtime="20220427 11:55:20.665">Keyword 'Click Element' failed after retrying for 2 minutes. The last error was: ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
+<status status="FAIL" starttime="20220427 16:35:26.261" endtime="20220427 16:36:08.561">ElementClickInterceptedException: Message: element click intercepted: Element &lt;span class="ml-2 text-body2-strong d-none d-inline-block-md"&gt;...&lt;/span&gt; is not clickable at point (81, 409). Other element would receive the click: &lt;div class="mb-1 Seo_Seo__content__Qi07a"&gt;...&lt;/div&gt;
   (Session info: chrome=100.0.4896.127)
 </status>
 </test>
 <kw name="Close Page" library="commonfunctionality" type="TEARDOWN">
 <kw name="Close Browser" library="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" starttime="20220427 11:55:20.670" endtime="20220427 11:55:23.285"/>
+<status status="PASS" starttime="20220427 16:36:08.566" endtime="20220427 16:36:11.097"/>
 </kw>
-<status status="PASS" starttime="20220427 11:55:20.669" endtime="20220427 11:55:23.286"/>
+<status status="PASS" starttime="20220427 16:36:08.566" endtime="20220427 16:36:11.097"/>
 </kw>
 <doc>Availability</doc>
-<status status="FAIL" starttime="20220427 11:52:37.531" endtime="20220427 11:55:23.286"/>
+<status status="FAIL" starttime="20220427 16:34:42.235" endtime="20220427 16:36:11.098"/>
 </suite>
 <statistics>
 <total>

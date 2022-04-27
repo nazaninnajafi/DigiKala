@@ -1,23 +1,25 @@
 *** Settings ***
-Library  SeleniumLibrary
+Documentation         DataDriven
+Library               SeleniumLibrary
 
-Resource  ../commonfunctionality.robot
+Resource              ../commonfunctionality.robot
+
 
 *** Variables ***
-${Classification}       xpath://span[@data-cro-id="header-main-menu"]
-${productClass}        xpath://a[@href="/main/book-and-media/"]
+${Classification}     xpath://span[@data-cro-id="header-main-menu"]
+${productClass}       xpath://a[@href="/main/book-and-media/"]
 ${productSubClass}    xpath://a[@href="/search/category-publication/"]
-${Magazine}             xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/div[1]/div[2]/a[1]
-#xpath://a[@href="/search/category-magazines/"]
-${CoverType}           xpath://div[contains(@class, "text-subtitle-strong d-flex ai-center") and contains(text(),'نوع جلد')]
-${CoverPaper}          xpath://div[contains(@class, "text-subtitle-strong") and contains(text(),'کاغذی')]
-${Product}              xpath://div[@class='d-flex flex-wrap']/div[1]
+${Magazine}           xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/div[1]/div[2]/a[1]
+${CoverType}          xpath://div[contains(@class, "text-subtitle-strong d-flex ai-center") and contains(text(),'نوع جلد')]
+${CoverPaper}         xpath://div[contains(@class, "text-subtitle-strong") and contains(text(),'کاغذی')]
+${Product}            xpath://div[@class='d-flex flex-wrap']/div[1]
+
 
 *** Keywords ***
 Sub Category
-    [Arguments]     ${assertion_textt}  ${sub_category}  
-    Assertion Text  ${assertion_textt}
-    Click   ${sub_category}
+    [Arguments]     ${assertionTextt}  ${subCategory}  
+    Assertion Text  ${assertionTextt}
+    Click   ${subCategory}
 
 Category
     [Arguments]     ${MagazineType}

@@ -1,7 +1,8 @@
 *** Settings ***
-Library  SeleniumLibrary
+Documentation          Buy Product
+Library                SeleniumLibrary
 
-Resource  ../commonfunctionality.robot
+Resource               ../commonfunctionality.robot
 
 *** Variables ***
 #Category
@@ -21,7 +22,7 @@ ${assertion}           xpath://*[@id="__next"]/div[1]/div[3]/div[3]/div[1]/artic
 ${AddToCart}           xpath://button[@data-cro-id="pdp-add-to-cart"]
 ${cartButton}          xpath://a[@href="/checkout/cart/"]  
 ${ContinueShopping}    xpath://div[contains(@class, "d-flex ai-center jc-center relative grow-1") and contains(text(),'ادامه')]
-###xpath://a[@href="/checkout/shipping/"]
+
 
 
 *** Keywords ***
@@ -40,15 +41,15 @@ Filters
     Add Filter  برند  ${Brand}  ${BrandName}
     Add Filter  نوع فروشنده  ${SellerType}  ${SellerName}
 
-BestSelling Tab And Next Page And Select Product
+Find Product
     Click   ${BestSelling}
     # Run Keyword And Ignore Error  Scroll Element Into View  ${assertion}
     Find and Select Product   ${Productt}
 
 Cart
-    commonfunctionality.Click   ${AddToCart}
-    commonfunctionality.Click   ${cartButton}
+    Click   ${AddToCart}
+    Click   ${cartButton}
     Assertion Text  سبد خرید
-    commonfunctionality.Click   ${ContinueShopping}
+    Click   ${ContinueShopping}
     Assertion Text  انتخاب زمان ارسال
     

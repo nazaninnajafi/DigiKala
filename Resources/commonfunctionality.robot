@@ -1,11 +1,13 @@
 *** Settings ***
-Library     SeleniumLibrary
+Library         SeleniumLibrary
+
 
 *** Variables ***
 ${url}          https://www.digikala.com/ 
 ${browser}      Chrome 
 ${Speed}        0s
 ${Timeout}      60s
+
 
 *** Keywords ***
 Open Page
@@ -43,15 +45,15 @@ Add Filter
         Wait Until Keyword Succeeds  2 min    5 sec  Click Element   ${subFilter}
 
 Find and Select Product  
-        [Arguments]     ${select_product}
-        Wait Until Element Is Enabled    ${select_product}
-        Run Keyword And Ignore Error  Scroll Element Into View   ${select_product}
-        Mouse Over   ${select_product}
-        Wait Until Keyword Succeeds  2 min    5 sec  Click Element   ${select_product} 
+        [Arguments]     ${selectProduct}
+        Wait Until Element Is Enabled    ${selectProduct}
+        Run Keyword And Ignore Error  Scroll Element Into View   ${selectProduct}
+        Mouse Over   ${selectProduct}
+        Wait Until Keyword Succeeds  2 min    5 sec  Click Element   ${selectProduct} 
         ${handle}  Get Window Handles
         Switch Window  NEW
 
-Open DigiKala And Login  
+Open And Login  
         Open Page
         Verify Login Page Loaded
         Click on login

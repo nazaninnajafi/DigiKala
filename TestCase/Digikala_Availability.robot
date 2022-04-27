@@ -1,5 +1,5 @@
 *** Settings ***
-Documentation  Availability
+Documentation     Availability
 
 Library           SeleniumLibrary
 
@@ -8,8 +8,8 @@ Resource          ../Resources/PageObjects/Login.robot
 Resource          ../Resources/PageObjects/Buy_product.robot
 Resource          ../Resources/PageObjects/Availability.robot
 
-Suite Setup     Open Page  
-# Open DigiKala And Login
+Suite Setup       Open Page
+# Open And Login
 Suite Teardown    Close Page
 
 
@@ -22,6 +22,7 @@ This is Availability Test for digikala.com
   Select Category
   Click  ${BestSelling} 
   Add Filter  برند  ${Brand}  ${BrandName} 
-  Next Page
+  # Next Page
+  Run Keyword And Ignore Error  Scroll Element Into View  ${assertion}
   Find and Select Product  ${PProduct}
   Know Me 
