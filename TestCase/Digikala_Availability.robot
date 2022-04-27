@@ -8,8 +8,7 @@ Resource          ../Resources/PageObjects/Login.robot
 Resource          ../Resources/PageObjects/Buy_product.robot
 Resource          ../Resources/PageObjects/Availability.robot
 
-Suite Setup       Open Page
-# Open And Login
+Suite Setup       Open And Login
 Suite Teardown    Close Page
 
 
