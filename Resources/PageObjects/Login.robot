@@ -7,10 +7,10 @@ Library         SeleniumLibrary
 ${WebsiteName}                 فروشگاه اینترنتی دیجی‌کالا                                   
 ${ClickOnLogin}                xpath://*[contains(text(),'ورود')]
 ${UsernameInput}               xpath://input[@name="username"]
-${Username}                    najafi.nazanin@gmail.com
+${Username}                    *******
 ${UsernamePressKeys}           xpath://button[@data-cro-id="login-register"]
 ${PasswordInput}               xpath://input[@name="password"]
-${Password}                    8349270
+${Password}                    *****
 ${PasswordPressKeys}           xpath://button[@type="submit"]
 ${ProfileButton}               xpath://div[contains(@class, "profileButton")]
 ${Profile}                     نازنین نجفی
